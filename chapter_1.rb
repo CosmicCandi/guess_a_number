@@ -47,12 +47,13 @@ class Game
       puts "Oops. Your guess was HIGH."
         self.turn_count -= 1
       end
+    end
+    #If the player runs out of turns without guessing correctly, say, "Sorry,
+    #You didn't get my number. My number was [target]."
+    puts "Sorry. You didn't get my number. My number was #{random_number}."
+    play_again?
+
   end
-  #If the player runs out of turns without guessing correctly, say, "Sorry,
-  #You didn't get my number. My number was [target]."
-  puts "Sorry. You didn't get my number. My number was #{random_number}."
-  play_again?
-end
 
   def play_again?
     puts "Would you like to play again?"
